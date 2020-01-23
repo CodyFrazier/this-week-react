@@ -1,0 +1,39 @@
+.App {
+	display: flex;
+	
+	flex-flow: nowrap column;
+	justify-content: space-around;
+	align-items: center;
+}
+ul{
+	display: flex;
+	flex-flow: nowrap column;
+	justify-content: center;
+	
+	list-style-type: none;
+	padding: 0;
+}
+li{
+	border: 1px solid;
+	padding: .5rem;
+}
+#container{
+	display: flex;
+	flex-flow: nowrap column;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+#container input{
+	padding: .5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+@media screen and (min-width: 768px){
+	.App{
+		height: 80vh;
+	}
+	ul{
+		flex-flow: nowrap row;
+	}
+}
